@@ -11,3 +11,5 @@ EXPOSE 5432
 
 COPY db/structure.sql /tmp/psql_data/
 COPY scripts/init_docker_postgres.sh /docker-entrypoint-initdb.d/
+
+CMD ["postgres"]
