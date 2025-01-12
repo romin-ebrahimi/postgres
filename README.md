@@ -2,7 +2,14 @@
 
 Launch a Docker PostgreSQL 15 server with restarts.
 
-### Run
+### Docker
+
+This will create a permanent volume with the directory name `postgres-data`
+which allows for persistence across restarts.
+
+```
+docker build -t fractal-postgres
+```
 
 ```docker
 docker run \
@@ -10,4 +17,5 @@ docker run \
 	-p 5432 \
 	-v ./postgres-data:/var/lib/postgresql/data \
 	--restart always
+	fractal-postgres
 ```

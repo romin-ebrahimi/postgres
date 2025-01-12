@@ -1,6 +1,9 @@
 # Ignore generated credentials from google-github-actions/auth
 gha-creds-*.json
 
+# Postgres data directory
+./postgres-data
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
